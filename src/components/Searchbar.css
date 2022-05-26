@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+.searchbar_container {
+  margin: 0 auto;
+  display: flex;
+  width: 35%;
+  align-items: center;
+  justify-content: flex-start;
+  height: 6vh;
+}
+.searchbar_container input {
+  width: 100%;
+  height: 2rem;
+  padding-left: 2.4rem;
+  border-radius: 50px;
+  border: 0.1rem solid grey;
+  transition: all 0.2s ease;
+}
+.searchbar_container button {
+  position: absolute;
+  width: 2.4rem;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  padding-left: 0.4rem;
+}
+.searchbar_container input:focus ~ button {
+  display: none;
+}
+.searchbar_container input:focus {
+  padding-left: 1rem;
+}
+.logo {
+  position: absolute;
+  left: 7.5%;
+  top: 0;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+  font-size: larger;
+  font-family: 'Open Sans', sans-serif;
+  cursor: default;
+}

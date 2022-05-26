@@ -1,38 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  scroll-behavior: smooth;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.main_container {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main_hr {
+  width: 85%;
+  border-radius: 100px;
+  border: 0.5px solid grey;
+  margin: 0;
+}
+
+.main_photoContainer {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex: 0 1 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.main_photoContainer img {
+  max-width: 75%;
+  width: 30%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+.main_photoContainer_pending {
+  width: 100%;
+  font-size: large;
+  color: #9b9b9b;
+}
+
+.main_pageUpButtonContainer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 7.5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.main_pageUpButton {
+  transition: all 1s ease-in;
+  padding: 4rem 1rem;
+  background-color: #ababab;
+  border: none;
+  border-radius: 5px;
+}
+
+.main_pageUpButton:hover {
+  background-color: #9b9b9b;
+}
+.toastError{
+  position: fixed;
+  bottom: 20%;
+  background-color: #d71717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 30rem;
+  height: 2.5rem;
+  border: solid 1px #0e0e0e;
+  transition: all 1s ease-in;
+}
+
+.hidden{
+  display: none;
 }
